@@ -80,16 +80,16 @@
       <Foreground>#00d300</Foreground>
     </TaskListStyle>
 	<PagerStyle>
-	    <Background>#003d00</Background> 
+	    <Background>#003d00</Background> <!--非焦點虛擬桌面顏色-->
 
-	    <Foreground>#003d00</Foreground> 
+	    <Foreground>#007d00</Foreground> <!--非焦點桌面顏色-->
 
 	    <Text>#00d300</Text>
 
 	    <Active>
-	        <Background>#00d300</Background>
+	        <Background>#00d300</Background><!--焦點虛擬桌面顏色-->
 	        
-	        <Foreground>#00d300</Foreground>
+	        <Foreground>#00d300</Foreground><!--焦點視窗顏色-->
 	    </Active>
 	</PagerStyle>
     <MenuStyle decorations="flat">
