@@ -223,7 +223,7 @@
 	<!--<Key mask="4S" key="s">sendd</Key>-->
     <Key mask="4S" key="r">restart</Key>
     <Key mask="4" key="Return">exec:x-terminal-emulator</Key>
-    <Key mask="4" key="space">exec:rofi -show drun</Key>
+    <Key mask="4" key="space">exec:rofi -show drun -theme ~/.config/rofi/green.rasi</Key>
     <Key mask="4S" key="e">exec:rofi -modi "power_menu:~/.power/power_menu" -show power_menu</Key>
     <!--<Key mask="4" key="p">exec:~/.power/power_mode.py</Key>-->
     <Key mask="4S" key="s">exec:flameshot screen</Key>
@@ -278,7 +278,8 @@
     <Mouse context="" button="3" mask="A">resize</Mouse>
 	<!--other-->
 	<StartupCommand>nm-applet &amp;</StartupCommand>
-	<StartupCommand>feh --bg-fill ~/.background/Yorick_0.jpg &amp;</StartupCommand>
+	<!--<StartupCommand>feh --bg-fill ~/.background/Yorick_0.jpg &amp;</StartupCommand>-->
+	<StartupCommand>feh --bg-fill .background/Zac_0.jpg &amp;</StartupCommand>
 	<StartupCommand>picom &amp;</StartupCommand>
 	<StartupCommand>volumeicon &amp;</StartupCommand>
 	<StartupCommand>xset s 600 +dpms dpms 600 900 1200 &amp;</StartupCommand><!--10分鐘鎖屏並待機 30分鐘掛起 60分鐘關閉整個螢幕電源-->
