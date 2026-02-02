@@ -287,4 +287,5 @@
 	<StartupCommand>xset s 600 +dpms dpms 600 900 1200 &amp;</StartupCommand><!--10分鐘鎖屏並待機 30分鐘掛起 60分鐘關閉整個螢幕電源-->
 	<StartupCommand>xset m 1/1 0 &amp;</StartupCommand><!--關閉滑鼠加速-->
 	<StartupCommand>xss-lock -- i3lock -c 003d00 &amp;</StartupCommand>
+	<StartupCommand>xfsettingsd &amp;</StartupCommand><!--xfce-settings-manager need-->
 </JWM>
