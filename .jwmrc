@@ -7,7 +7,8 @@
         <Program icon="utilities-terminal" label="Terminal">x-terminal-emulator</Program>
         <Separator/>
         <Program icon="lock" label="Lock">
-           xscreensaver-command -lock<!--or "i3lock"-->
+        	i3lock
+           <!--xscreensaver-command -lock--><!--or "i3lock"-->
         </Program>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
