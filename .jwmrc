@@ -7,8 +7,9 @@
         <Program icon="utilities-terminal" label="Terminal">x-terminal-emulator</Program>
         <Separator/>
         <Program icon="lock" label="Lock">
-        	i3lock
-           <!--xscreensaver-command -lock--><!--or "i3lock"-->
+			xset s activate
+			<!--xssstate -t可以看剩餘幾毫秒鎖屏-->
+			<!--xscreensaver-command -lock--><!--or "i3lock"-->
         </Program>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
@@ -237,7 +238,7 @@
     <!--<Key mask="4" key="n">exec:brightnessctl set +10%</Key>-->
     <!--<Key mask="4" key="b">exec:brightnessctl set 10%-</Key>-->
 	<!--<Key mask="4" key="l">exec:xscreensaver-command -lock</Key>-->
-	<Key mask="4" key="l">exec:i3lock</Key>
+	<Key mask="4" key="l">exec:xset s activate</Key>
 	<Key mask="4" key="e">move</Key>
 	<Key mask="4" key="r">resize</Key>
 	
@@ -282,10 +283,12 @@
 	<!--<StartupCommand>feh --bg-fill ~/.background/Yorick_0.jpg &amp;</StartupCommand>-->
 	<StartupCommand>feh --bg-fill ~/.background/Maokai_0.jpg &amp;</StartupCommand>
 	<StartupCommand>~/.fehbg &amp;</StartupCommand>
-	<StartupCommand>picom &amp;</StartupCommand>
+	<!--<StartupCommand>picom &amp;</StartupCommand>-->
 	<StartupCommand>volumeicon &amp;</StartupCommand>
 	<StartupCommand>xset s 600 +dpms dpms 600 900 1200 &amp;</StartupCommand><!--10分鐘鎖屏並待機 30分鐘掛起 60分鐘關閉整個螢幕電源-->
 	<StartupCommand>xset m 1/1 0 &amp;</StartupCommand><!--關閉滑鼠加速-->
-	<StartupCommand>xss-lock -- i3lock -c 003d00 &amp;</StartupCommand>
+	<!--<StartupCommand>xss-lock -- i3lock -c 003d00 &amp;</StartupCommand>-->
+	<StartupCommand>xss-lock -- i3lock-fancy &amp;</StartupCommand>
+	
 	<StartupCommand>xfsettingsd &amp;</StartupCommand><!--xfce-settings-manager need-->
 </JWM>
